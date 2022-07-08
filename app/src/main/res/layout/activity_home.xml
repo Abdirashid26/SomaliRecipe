@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipies"
+        android:textSize="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/tertiary"
+        android:fontFamily="@font/delight"
+        android:layout_marginTop="20dp"
+        android:id="@+id/recipies"
+        />
+<!--Breakfast-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breakfast"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/secondary"
+        android:id="@+id/breakfast"
+        android:layout_below="@id/recipies"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breakfast"
+        android:outlineAmbientShadowColor="@color/tertiary"
+        android:outlineSpotShadowColor="@color/tertiary"
+        android:id="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/food1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/anjeera"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anjera"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/food2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/malowax"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Malowax"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/food3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/sabaayad"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sabaayad"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/food4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/mushaari"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mushaari"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/food5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/favabeans"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ful Medames"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+<!--Lunch-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lunch"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/secondary"
+        android:id="@+id/lunch"
+        android:layout_below="@id/horizontalScrollView"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lunch"
+        android:outlineAmbientShadowColor="@color/tertiary"
+        android:outlineSpotShadowColor="@color/tertiary"
+        android:id="@+id/horizontalScrollView1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food6"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/oodkac"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Oodkac"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food7"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/rice"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bariis Iskukaris"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food8"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/pasta"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Baasto"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+<!--Dinner-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dinner"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/secondary"
+        android:id="@+id/dinner"
+        android:layout_below="@id/horizontalScrollView1"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dinner"
+        android:outlineAmbientShadowColor="@color/tertiary"
+        android:outlineSpotShadowColor="@color/tertiary"
+        android:id="@+id/horizontalScrollView2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food9"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/cambuulo"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cambuulo"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/food10"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/soup"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maraq Digaag"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food11"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/muufo"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Muufo"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+<!--Snacks-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snacks"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/secondary"
+        android:id="@+id/snacks"
+        android:layout_below="@id/horizontalScrollView2"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snacks"
+        android:outlineAmbientShadowColor="@color/tertiary"
+        android:outlineSpotShadowColor="@color/tertiary"
+        android:id="@+id/horizontalScrollView3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food12"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/samosa"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sambuus"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food13"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/nafaqo"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nafaqo"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food14"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/halwa"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Xalwo"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food15"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/kashata"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gashaato"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/food16"
+                android:layout_height="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/kackac"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kac Kac"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/delight"
+                            android:textColor="@color/primary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
+</ScrollView>

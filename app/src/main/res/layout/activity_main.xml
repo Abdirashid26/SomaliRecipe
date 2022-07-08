@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Somali"
+        android:textStyle="bold"
+        android:textSize="80dp"
+        android:id="@+id/somali"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/tertiary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipes"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="-30dp"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/tertiary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/somali"
+        android:id="@+id/recipe"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="'Authentic somali dishes'"
+        android:textSize="20dp"
+        android:id="@+id/introText"
+        android:layout_below="@id/recipe"
+        android:textAlignment="center"
+        android:fontFamily="@font/delight"
+        android:textColor="@color/tertiary"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tertiary"
+        android:text="Welcome"
+        android:textColor="@color/primary"
+        android:layout_below="@id/introText"
+        android:layout_marginTop="20dp"
+        app:rippleColor="@color/primary"
+        android:layout_marginHorizontal="40dp"
+        app:cornerRadius="20dp"
+        android:id="@+id/welcome"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/faisallogo_whitish"
+        />
+
+</RelativeLayout>
